@@ -1,15 +1,8 @@
-package com.javier.salazar.leetCode;
+package com.javier.findMedianSortedArrays;
 
-public class findMedianSortedArrays {
+public class FindMedianSortedArrays {
 
-    public static void main(String[] args) {
-        int [] nums1 = new int[] {1,2,3};
-        int [] nums2 = new int[] {4,5};
-
-        System.out.println(findMedianSortedArrays(nums1, nums2));
-    }
-
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int c1 = 0;
         int c2 = 0;
         int [] merged = new int[nums1.length + nums2.length];

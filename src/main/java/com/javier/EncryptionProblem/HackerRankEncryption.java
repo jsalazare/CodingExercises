@@ -2,6 +2,7 @@ package com.javier.EncryptionProblem;
 
 public class HackerRankEncryption {
 
+    //https://www.hackerrank.com/challenges/encryption/problem
 
     static String encryption(String s) {
         double sqrt = Math.sqrt(s.length());

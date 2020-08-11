@@ -1,6 +1,9 @@
 package com.javier.maximumLevelSumOfABinaryTree;
 
-   class TreeNode {
+import java.util.LinkedList;
+import java.util.Queue;
+
+class TreeNode {
       int val;
       TreeNode left;
       TreeNode right;
@@ -14,6 +17,45 @@ package com.javier.maximumLevelSumOfABinaryTree;
   }
 
 class Solution {
+
+       public int maxLevelSum2(TreeNode root) {
+         Queue<TreeNode> queue= new LinkedList<TreeNode>();
+         int sum = 0;
+         int maxlvl = 0;
+         int maxSum = 0;
+         int level = 1;
+         queue.add(root);
+         TreeNode current = null;
+
+         while(!queue.isEmpty()) {
+
+
+             int size = queue.size();
+             for(int i = 0; i < size; i++) {
+                 current = queue.poll();
+                 assert current != null;
+                 sum = sum + current.val;
+                 if(current.left != null){
+                     queue.add(current.left);
+                 }
+
+                 if(current.right != null){
+                     queue.add(current.right);
+                 }
+
+             }
+
+             if(maxSum < sum){
+                 maxSum = sum;
+                 maxlvl = level;
+             }
+
+             level++;
+             sum = 0;
+         }
+
+             return maxlvl;
+     }
 
     public int maxLevelSum(TreeNode root) {
         // HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();

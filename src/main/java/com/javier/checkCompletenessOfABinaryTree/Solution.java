@@ -24,7 +24,7 @@ public class Solution {
     public static boolean isCompleteTree(TreeNode root) {
         LinkedList<TreeNode> queue = new LinkedList();
         boolean seeNull = false;
-        queue.toArray()
+        queue.toArray();
         queue.add(root);
         TreeNode current;
 

@@ -2,6 +2,7 @@ package com.javier.findMedianSortedArrays;
 
 public class FindMedianSortedArrays {
 
+    //https://leetcode.com/problems/median-of-two-sorted-arrays/
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int c1 = 0;
         int c2 = 0;

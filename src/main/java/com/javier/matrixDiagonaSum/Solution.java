@@ -1,5 +1,7 @@
 package com.javier.matrixDiagonaSum;
 class Solution {
+
+    //https://leetcode.com/problems/matrix-diagonal-sum/
     public int diagonalSum(int[][] mat) {
         int left = 0;
         int right = mat.length - 1;

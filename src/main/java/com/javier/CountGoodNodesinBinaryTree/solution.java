@@ -2,6 +2,7 @@ package com.javier.CountGoodNodesinBinaryTree;
 
 import java.util.ArrayList;
 
+//https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 public class solution {
 
     static class TreeNode {

@@ -1,5 +1,6 @@
 package com.javier.CountGoodTriplets;
 
+//https://leetcode.com/problems/count-good-triplets/
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int counter = 0;

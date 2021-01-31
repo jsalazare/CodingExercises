@@ -1,6 +1,7 @@
 package com.javier.NumberOfRectanglesThatCanFormTheLargestSquare;
 
 //https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
+
 class Solution {
     public int countGoodRectangles(int[][] rectangles) {
 

@@ -2,6 +2,7 @@ package com.javier.MaximumNumberOfCoinsYouCanGet;
 
 import java.util.Arrays;
 
+//https://leetcode.com/problems/maximum-number-of-coins-you-can-get/
 public class Solution {
 
     public static int maxCoins(int[] piles) {

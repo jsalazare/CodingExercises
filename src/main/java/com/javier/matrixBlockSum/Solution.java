@@ -13,33 +13,10 @@ public class Solution {
         int sum = 0;
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {
-
-
-                if (i - K <= 0){
-                    iUpLimit = 0;
-                } else {
-                    iUpLimit = i - K;
-                }
-
-                if (i + K >= mat.length - 1 ){
-                    iDowntLimit = mat.length - 1;
-                } else {
-                    iDowntLimit = i + K;
-                }
-
-
-                if (j - K <= 0){
-                    jLeftLimit = 0;
-                } else {
-                    jLeftLimit = j - K;
-                }
-
-
-                if (j + K >= mat[i].length - 1){
-                    jRightLimit = mat[i].length - 1;
-                } else {
-                    jRightLimit = j + K;
-                }
+                iUpLimit = Math.max(i - K, 0);
+                iDowntLimit = Math.min(i + K, mat.length - 1);
+                jLeftLimit = Math.max(j - K, 0);
+                jRightLimit = Math.min(j + K, mat[i].length - 1);
 
                 sum = 0;
                 for(int r = iUpLimit; r <= iDowntLimit; r++) {

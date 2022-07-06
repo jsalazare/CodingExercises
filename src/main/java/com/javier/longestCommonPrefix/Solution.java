@@ -6,6 +6,7 @@ public class Solution {
             return strs[0];
         }
 
+
         StringBuilder sb = new StringBuilder(strs[0]);
 
 

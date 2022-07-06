@@ -11,6 +11,7 @@ public class Solution {
 
 
 
+
         String current = "";
         int shortestStringLength = 0;
         for (int i = 1; i < strs.length; i++) {
